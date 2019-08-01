@@ -57,7 +57,6 @@ export class MaxHeap {
     arr.forEach(item => {
       this.insert(item)
     })
-    console.log(this.heap)
   }
   peak () {
     return this.heap[i]
