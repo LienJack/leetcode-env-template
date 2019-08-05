@@ -13,11 +13,13 @@ module.exports =  {
       loader: 'babel-loader'
     }]
   },
+  devtool: 'source-map',
   resolve: {
     extensions: ['.js'],
     alias: {
       "@": path.resolve('src'),
-      "~": path.resolve('collection')
+      "~": path.resolve('collection'),
+      "utils": path.resolve('utils')
     }
   },
   plugins: [
